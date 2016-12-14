@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<html lang="sv">
+		<head>
+			<title>Projekt 15</title>
+			<link rel="stylesheet" type="text/css" href="Projekt15C.css">
+			<body>
+			
+				<div class="box_row">
+					<div id="playerTank"></div>
+					<div class="box_row w15 marLefAu" id="ID_health">
+						<p id="ID_plr_health"></p>
+						<p id="ID_enm_health"></p>
+						<p id="ID_plr_auto_dmg"></p>
+						<p id="ID_enm_auto_dmg"></p>
+					</div>
+					<div id="enemyTank" onclick="click_dmg()"></div>
+				</div>
+				
+				<div class="box_row_L">
+					<div class="box_row w15" id="ID_money"></div>
+					<div class="box_row w25" id="ID_upgrades" onclick="show()">Upgrades</div>
+						<div class="box_row_h w100" id="ID_upgradesBox">
+							<div class="box_column w25">
+								<p class="titleContainer">Cannon</p>
+									<div class="box_column w100 noBor">
+										<button class="button_st w100" onclick="upgrade('cannon', 37)">Install 37mm cannon</button>
+										<button class="button_st w100" onclick="upgrade('cannon', 40)">Install 40mm cannon</button>
+								</div>
+							
+							</div>
+							
+								<div class="box_column w25">
+									<p class="titleContainer">Turret</p>
+										<div class="box_column w100 noBor">
+											<button class="button_st w100" onclick="upgrade('turret', 0)">Upgrade turret</button>
+										</div>
+							
+								</div>
+							
+						
+				</div>
+			
+			</body>
+			<script src="Projekt15Jvariables.js"></script>
+		</head>
+	</html>
