@@ -239,32 +239,6 @@ body {
 		
 		/* Bilder */
 		
-		#playerTank {
-			background-image: url("tank1.png");
-			width: 356px;
-			height: 138px;
-			
-		}
-		
-		#ID_upgrades:hover {
-			cursor: pointer;
-			text-decoration: underline;
-			
-		}
-		
-		#enemyTank {
-			background-image: url("tank2.png");
-			width: 356px;
-			height: 138px;
-			margin-left: auto;
-			
-		}
-		
-		#enemyTank:hover {
-			cursor: pointer;
-			
-		}
-
 		
 		/* Buttons */
 		
@@ -297,7 +271,25 @@ body {
 			
 		}
 		
+		.button_stH {
+			display: none;
+			flex-direction: row;
+			border: 5px solid #afa379;
+			justify-content: center;
+			padding: 10px;
+			background-color: #464130;
+			font-size: 8pt;
+			color: white;
+			
+		}
+		
 		.button_st:hover {
+			cursor: pointer;
+			text-decoration: underline;
+			
+		}
+		
+		.button_stH:hover {
 			cursor: pointer;
 			text-decoration: underline;
 			
@@ -322,6 +314,14 @@ body {
 				padding: 10px;
 				
 			}
+		
+		
+
+		#ID_upgrades:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			
+		}
 
 /* body {
 	background-color: black;
