@@ -6,12 +6,12 @@
 			<body>
 			
 				<div class="box_row">
-					<div id="playerTank"></div>
-					<div class="box_row w15 marLefAu" id="ID_health">
-						<p id="ID_plr_health"></p>
-						<p id="ID_enm_health"></p>
-						<p id="ID_plr_auto_dmg"></p>
-						<p id="ID_enm_auto_dmg"></p>
+					<div class="box_column_L">
+						<div class="box_row w100" id="cannon">Your cannon</div>
+						<p id="setting"></p>
+					</div>
+					<div class="box_row w15 marLefAu" id="ID_results">
+
 					</div>
 					<div id="enemyTank" onclick="click_dmg()"></div>
 				</div>
@@ -22,10 +22,12 @@
 						<div class="box_row_h w100" id="ID_upgradesBox">
 							<div class="box_column w25">
 								<p class="titleContainer">Cannon</p>
-									<div class="box_column w100 noBor">
 										<button class="button_st w100" onclick="upgrade('cannon', 37)">Install 37mm cannon</button>
-										<button class="button_st w100" onclick="upgrade('cannon', 40)">Install 40mm cannon</button>
-								</div>
+										<button class="button_stH w100" onclick="upgrade('cannon', 40)">Install 40mm cannon</button>
+										<button class="button_stH w100" onclick="upgrade('cannon', 45)">Install 45mm cannon</button>
+										<button class="button_stH w100" onclick="upgrade('cannon', 452)">Install 45mm high-velocity cannon</button>
+										<button class="button_stH w100" onclick="upgrade('cannon', 47)">Install 47mm cannon</button>
+										<button class="button_stH w100" onclick="upgrade('cannon', 50)">Install 50mm cannon</button>
 							
 							</div>
 							
