@@ -121,6 +121,16 @@ body {
 				
 			}
 			
+			.marRigAu {
+				margin-right: auto;
+				
+			}
+			
+			.marUpAu {
+				margin-top: auto;
+				
+			}
+			
 			.w5 {
 				max-width: 5%;
 				
@@ -221,8 +231,19 @@ body {
 				
 			}
 			
-			.listContainer {
-				
+			.mih700 {
+				min-height: 700px;
+			}
+			
+			.mih40 {
+				min-height: 40px;
+			}
+			
+			.mah200 {
+				max-height: 200px;
+			}
+			
+			.listContainer {	
 				list-style-position: inside;
 				list-style-type: decimal;
 				
@@ -322,6 +343,97 @@ body {
 				text-decoration: underline;
 			
 		}
+		
+		
+		.abs_30 {
+			position: absolute;
+			height: 230px;
+			width: 30px;
+			background-image: url("metal.jpg");
+			top: 330px;
+			right: 350px;
+		}
+		
+		.abs_50 {
+			position: absolute;
+			height: 230px;
+			width: 50px;
+			background-image: url("metal.jpg");
+			top: 330px;
+			right: 350px;
+		}
+		
+		.abs_80 {
+			position: absolute;
+			height: 230px;
+			width: 80px;
+			background-image: url("metal.jpg");
+			top: 330px;
+			right: 350px;
+		}
+		
+		.abs_100 {
+			position: absolute;
+			height: 230px;
+			width: 100px;
+			background-image: url("metal.jpg");
+			top: 330px;
+			right: 350px;
+		}
+		
+		#ID_shellBody {
+		    box-sizing: border-box;
+		    width: 180px;
+		    height: 50px;
+		    position: absolute;
+		    top: 415px;
+		    left: 275px;
+		    background-color: #9c9898;
+		}
+		
+		.AP {
+		  box-sizing: border-box;
+		  width: 30px;
+		  height: 50px;
+		  position: absolute;
+		  left: 180px;
+		  border-radius: 0 30px 30px 0 / 0 18px 18px 0;
+		  background-color: #9c9898;
+		  z-index: 2;
+		}
+		
+		.APC {
+		  box-sizing: border-box;
+		  width: 40px;
+		  height: 50px;
+		  position: absolute;
+		  left: 180px;
+		  border-radius: 0 30px 30px 0 / 0 10px 10px 0;
+		  background-color: #6d6d6d;
+		  z-index: 1;
+		}
+		
+		.APBC {
+		  box-sizing: border-box;
+		  width: 60px;
+		  height: 50px;
+		  position: absolute;
+		  left: 180px;
+		  border-radius: 0 60px 60px 0 / 0 20px 20px 0;
+		  background-color: white;
+		  z-index: 0;
+		}
+		
+		.APCR {
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: 180px;
+			border-bottom: 25px solid transparent;
+			border-left: 50px solid #dfdfdf;
+			border-top: 25px solid transparent;
+		}
+		
 
 /* body {
 	background-color: black;
