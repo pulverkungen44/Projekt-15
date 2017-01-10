@@ -1,19 +1,19 @@
 //Shells and shots
-c37$AP = {name: "37mm LC", shellType: "AP", b_factor: 6410, muzzle_vel: 792, mass: 0.87, filler: 0,
+c37$AP = {name: "37mm M3", shellType: "AP", b_factor: 6410, muzzle_vel: 792, mass: 0.87, filler: 0,
 pen100: 80, pen200: 75, pen300: 70, pen400: 67, pen500: 63, pen600: 59, pen700: 55, pen800: 52, pen900: 48, pen1000: 45,
 pen1100: 42, pen1200: 40, pen1300: 37, pen1400: 35, pen1500: 33, pen1600: 31, pen1700: 29, pen1800: 27, pen1900: 25, pen2000: 23};
 
-c57$AP = {name: "57mm LC", shellType: "AP", b_factor: 4711, muzzle_vel: 899, mass: 2.00, filler: 0,
+c57$AP = {name: "57mm 6P", shellType: "AP", b_factor: 4711, muzzle_vel: 899, mass: 2.00, filler: 0,
 pen100: 141, pen200: 136, pen300: 129, pen400: 123, pen500: 118, pen600: 112, pen700: 106, pen800: 101, pen900: 97,
 pen1000: 93, pen1100: 89, pen1200: 84, pen1300: 80, pen1400: 76, pen1500: 73, pen1600: 70, pen1700: 67, pen1800: 63, pen1900: 60,
 pen2000: 58};
 
-c76$APCBC = {name: "76mm MC", shellType: "APCBC", b_factor: 2321, muzzle_vel: 792, mass: 7.00, filler: 65,
+c76$APCBC = {name: "76mm M1", shellType: "APCBC", b_factor: 2321, muzzle_vel: 792, mass: 7.00, filler: 65,
 pen100: 127, pen200: 125, pen300: 122, pen400: 119, pen500: 116, pen600: 114, pen700: 111, pen800: 109, pen900: 106,
 pen1000: 104, pen1100: 102, pen1200: 99, pen1300: 97, pen1400: 95, pen1500: 93, pen1600: 91, pen1700: 88, pen1800: 86, pen1900: 84,
 pen2000: 82};
 
-c76$HVAP = {name: "76mm MC", shellType: "HVAP/APCR", b_factor: 3192, muzzle_vel: 1032, mass: 3.4, core: 1.8,
+c76$HVAP = {name: "76mm M1", shellType: "HVAP/APCR", b_factor: 3192, muzzle_vel: 1032, mass: 3.4, core: 1.8,
 pen100: 182, pen200: 178, pen300: 173, pen400: 170, pen500: 166, pen600: 162, pen700: 158, pen800: 154, pen900: 150,
 pen1000: 146, pen1100: 142, pen1200: 139, pen1300: 136, pen1400: 132, pen1500: 129, pen1600: 126, pen1700: 122, pen1800: 119, pen1900: 116,
 pen2000: 113};
@@ -155,8 +155,7 @@ function show() {
 function choose(x) {
 	switch (x) {
 		case "c":
-			document.getElementById("ID_cannons").classList.remove("box_column_h")
-			document.getElementById("ID_cannons").classList.add("box_column")
+			document.getElementById("ID_cannons").classList.toggle("box_column_h")
 			break;
 			
 		case "s":
@@ -174,4 +173,8 @@ function choose(x) {
 			document.getElementById("ID_targets").classList.add("box_column")
 			break;
 	}
+}
+
+function play() {
+	
 }
