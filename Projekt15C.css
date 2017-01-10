@@ -243,6 +243,10 @@ body {
 				max-height: 200px;
 			}
 			
+			.mah250 {
+				max-height: 250px;
+			}
+			
 			.listContainer {	
 				list-style-position: inside;
 				list-style-type: decimal;
@@ -411,6 +415,7 @@ body {
 		  border-radius: 0 30px 30px 0 / 0 10px 10px 0;
 		  background-color: #6d6d6d;
 		  z-index: 1;
+		  animation: shoot 2s 1;
 		}
 		
 		.APBC {
@@ -434,7 +439,10 @@ body {
 			border-top: 25px solid transparent;
 		}
 		
-
+		@keyframes shoot {
+			from {left: 180px;}
+			to {left: 300px;}
+		}
 /* body {
 	background-color: black;
 	color: white;
