@@ -12,7 +12,7 @@
 						<p id="ID_range"></p>
 						<p id="ID_target"></p>
 					</div>
-					<div class="box_column_L mah200">
+					<div class="box_column_L mah250">
 						<button id="ID_button_cannon" onclick="choose('c')">Choose cannon</button>
 						<button id="ID_button_ammo" onclick="choose('s')">Choose shell</button>
 						<button id="ID_button_range" onclick="choose('r')">Choose distance</button>
@@ -20,9 +20,9 @@
 					
 						<div id="ID_cannons" class="box_column_h w100" style="margin-top: 20px">
 						
-							<button id="ID_37cannon" class="button mih40">37mm M3</button>
-							<button id="ID_57cannon" class="button mih40">57mm 6 Pounder</button>
-							<button id="ID_76cannon" class="button mih40">76mm M1</button>
+							<button onclick="updateCannon('37M3')" id="ID_37cannon" class="button mih40">37mm M3</button>
+							<button onclick="updateCannon('576P')" id="ID_57cannon" class="button mih40">57mm 6 Pounder</button>
+							<button onclick="updateCannon('76M1')" id="ID_76cannon" class="button mih40">76mm M1</button>
 							
 						</div>
 						<div id="ID_shells" class="box_column_h w100"></div>
@@ -30,7 +30,7 @@
 						<div id="ID_targets" class="box_column_h w100"></div>
 					</div>
 					
-					
+					<button onclick="play()" class="button mah200">Play</button>
 					<div id="ID_shellBody">
 					
 						<div class="AP"></div>
